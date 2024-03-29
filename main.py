@@ -16,13 +16,13 @@ IMAGE_MASK_PATH = "./nene_mask.png"
 IMAGE_OUTPUT_PATH = "./nene.png"
 
 alice_mask = numpy.array(Image.open(IMAGE_MASK_PATH))
-wc = WordCloud(
+word_cloud = WordCloud(
     background_color="white",
     mask=alice_mask,
 )
-wc.generate(WORD)
-wc.to_file(IMAGE_OUTPUT_PATH)
+word_cloud.generate(WORD)
+word_cloud.to_file(IMAGE_OUTPUT_PATH)
 
-pyplot.imshow(wc)
+pyplot.imshow(word_cloud)
 pyplot.axis("off")
 pyplot.show()
