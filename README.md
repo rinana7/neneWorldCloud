@@ -1,4 +1,4 @@
-# Wordcloud
+# Nene Word Cloud
 
 This is an app that displays words in the form of characters created in the world cloud.
 
